@@ -1,7 +1,6 @@
 <?php
 include ('../../app/config.php');
 include ('../../admin/layout/part_1.php');
-
 ?>
 
 <div class="content-wrapper">
@@ -20,21 +19,33 @@ include ('../../admin/layout/part_1.php');
                             <h3 class="card-title">Rellene el formulario</h3>
                         </div>
                         <div class="card-body">
-                            <form action="<?=APP_URL;?>app/controllers/roles/create.php" method="post" >
+                            <form action="<?=APP_URL;?>/app/controllers/roles/create.php" method="post" >
                                 <div class="row">
                                     <div class="col-md-12">
-                                      <div class="form-group">
-                                          <label for="">Nombre del rol</label>
-                                          <input type="text"  id="name_rol" name="name_rol" class="form-control" required >
-                                      </div>
+                                        <div class="form-group">
+                                            <label for="name_rol">Nombre del rol</label>
+                                            <input type="text" id="name_rol" name="name_rol" class="form-control" required>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                      <div class="form-group">
-                                        <button type="submit" class="btn btn-primary" >Registrar</button>
-                                        <a href="<?=APP_URL;?>admin/roles" class="btn btn-secondary" >Cancelar</a>
-                                      </div>
+                                        <div class="form-group">
+                                            <label for="category">Categoría</label>
+                                            <select id="category" name="category" class="form-control" required>
+                                                <option value="admin">Administrativo</option>
+                                                <option value="teacher">Docente</option>
+                                                <option value="student">Estudiante</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Registrar</button>
+                                            <a href="<?=APP_URL;?>/admin/roles" class="btn btn-secondary">Cancelar</a>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -46,9 +57,7 @@ include ('../../admin/layout/part_1.php');
     </div>
 </div>
 
-
 <?php
 include ('../../admin/layout/part_2.php');
-include ('../../layout/messages.php')
+include ('../../layout/messages.php');
 ?>
-  

@@ -4,9 +4,11 @@ define('USER', 'root');
 define('PASSWORD', 'Casa2468$');
 define('BD', 'system_uptb');
 
-define('APP_NAME', 'SISTEMA DE GESTIÓN UPTB');
-define('APP_URL', 'http://localhost/system_uptb/');
+define('APP_NAME', 'UPTB "José Félix Ribas"');
+define('APP_URL', 'http://localhost/system_uptb');
 define('KEY_API_MAPS', '');
+
+define('TOKEN_APP_GMAIL', 'tdrt togr ftip mvkd' );
 
 $server = "mysql:dbname=".BD.";host=".SERVER;
 
@@ -30,5 +32,8 @@ $currentYear = date(format: 'Y');
 
 //Estado de Registro
 $registration_status = '1';
+$fyh_creation = $dateTime;
+$fyh_creation = $dateTime;
+$fyh_update = $dateTime;
 
 ?>
